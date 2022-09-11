@@ -17,5 +17,36 @@ namespace PlakDukkaniYoneticiModulu
         {
             InitializeComponent();
         }
+        public void FormAc(Form form)
+        {
+            panelDesktop.Controls.Clear();
+            form.MdiParent = this;
+            panelDesktop.Controls.Add(form);
+            form.BringToFront();
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Height = panelDesktop.Height;
+            form.Width = panelDesktop.Width;
+            form.Show();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmUpdate());
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmUserControl());
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            panelDesktop.Controls.Clear();           
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmAdd());
+        }
     }
 }

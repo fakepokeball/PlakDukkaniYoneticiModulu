@@ -39,6 +39,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblUserNameMain = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
@@ -75,7 +76,7 @@
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 30;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(0, 226);
+            this.btnAdd.Location = new System.Drawing.Point(0, 260);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAdd.Size = new System.Drawing.Size(200, 60);
@@ -83,6 +84,7 @@
             this.btnAdd.Text = " ADD ALBUMES";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -96,7 +98,7 @@
             this.btnUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUpdate.IconSize = 30;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(0, 166);
+            this.btnUpdate.Location = new System.Drawing.Point(0, 200);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnUpdate.Size = new System.Drawing.Size(200, 60);
@@ -104,6 +106,7 @@
             this.btnUpdate.Text = "  UPDATE ALBUMES";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSignIn
             // 
@@ -125,6 +128,7 @@
             this.btnSignIn.Text = "  SIGN IN";
             this.btnSignIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSignIn.UseVisualStyleBackColor = true;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // btnHome
             // 
@@ -138,7 +142,7 @@
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 30;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 106);
+            this.btnHome.Location = new System.Drawing.Point(0, 140);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(200, 60);
@@ -146,6 +150,7 @@
             this.btnHome.Text = "  HOME";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnSignOut
             // 
@@ -174,7 +179,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 106);
+            this.panel1.Size = new System.Drawing.Size(200, 140);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -182,19 +187,29 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 106);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 140);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panelTitleBar
             // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.SlateGray;
+            this.panelTitleBar.Controls.Add(this.lblUserNameMain);
             this.panelTitleBar.Controls.Add(this.label1);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(673, 69);
             this.panelTitleBar.TabIndex = 1;
+            // 
+            // lblUserNameMain
+            // 
+            this.lblUserNameMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblUserNameMain.Location = new System.Drawing.Point(439, 43);
+            this.lblUserNameMain.Name = "lblUserNameMain";
+            this.lblUserNameMain.Size = new System.Drawing.Size(231, 23);
+            this.lblUserNameMain.TabIndex = 1;
             // 
             // label1
             // 
@@ -208,6 +223,7 @@
             // 
             // panelDesktop
             // 
+            this.panelDesktop.BackColor = System.Drawing.Color.Moccasin;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 69);
             this.panelDesktop.Name = "panelDesktop";
@@ -227,6 +243,7 @@
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
+            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
@@ -252,6 +269,7 @@
         private FontAwesome.Sharp.IconButton btnHome;
         private FontAwesome.Sharp.IconButton btnSignOut;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUserNameMain;
     }
 }
 
