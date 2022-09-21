@@ -46,7 +46,12 @@ namespace PlakDukkaniYoneticiModulu
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.FormAc(new frmAdd());
+            this.FormAc(new frmFinished());
+        }
+
+        private void txtSearch_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            txtSearch.Clear();
         }
     }
 }

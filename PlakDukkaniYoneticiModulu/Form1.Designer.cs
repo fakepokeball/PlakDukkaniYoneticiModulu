@@ -31,28 +31,34 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.btnAdd = new FontAwesome.Sharp.IconButton();
+            this.btnPast = new FontAwesome.Sharp.IconButton();
             this.btnUpdate = new FontAwesome.Sharp.IconButton();
             this.btnSignIn = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.btnSignOut = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.panelDashboard = new System.Windows.Forms.Panel();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblUserNameMain = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.ıconButton3 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton2 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelTitleBar.SuspendLayout();
+            this.panelDashboard.SuspendLayout();
+            this.panelBottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panelMenu.Controls.Add(this.btnAdd);
+            this.panelMenu.Controls.Add(this.btnPast);
             this.panelMenu.Controls.Add(this.btnUpdate);
             this.panelMenu.Controls.Add(this.btnSignIn);
             this.panelMenu.Controls.Add(this.btnHome);
@@ -64,27 +70,27 @@
             this.panelMenu.Size = new System.Drawing.Size(200, 477);
             this.panelMenu.TabIndex = 0;
             // 
-            // btnAdd
+            // btnPast
             // 
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.btnAdd.IconColor = System.Drawing.Color.White;
-            this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAdd.IconSize = 30;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(0, 260);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAdd.Size = new System.Drawing.Size(200, 60);
-            this.btnAdd.TabIndex = 7;
-            this.btnAdd.Text = " ADD ALBUMES";
-            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnPast.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPast.FlatAppearance.BorderSize = 0;
+            this.btnPast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPast.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnPast.ForeColor = System.Drawing.Color.White;
+            this.btnPast.IconChar = FontAwesome.Sharp.IconChar.SdCard;
+            this.btnPast.IconColor = System.Drawing.Color.White;
+            this.btnPast.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPast.IconSize = 30;
+            this.btnPast.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPast.Location = new System.Drawing.Point(0, 260);
+            this.btnPast.Name = "btnPast";
+            this.btnPast.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPast.Size = new System.Drawing.Size(200, 60);
+            this.btnPast.TabIndex = 7;
+            this.btnPast.Text = " FINISHED WORKS";
+            this.btnPast.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPast.UseVisualStyleBackColor = true;
+            this.btnPast.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -192,16 +198,30 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panelTitleBar
+            // panelDashboard
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.SlateGray;
-            this.panelTitleBar.Controls.Add(this.lblUserNameMain);
-            this.panelTitleBar.Controls.Add(this.label1);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(200, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(673, 69);
-            this.panelTitleBar.TabIndex = 1;
+            this.panelDashboard.BackColor = System.Drawing.Color.SlateGray;
+            this.panelDashboard.Controls.Add(this.txtSearch);
+            this.panelDashboard.Controls.Add(this.lblUserNameMain);
+            this.panelDashboard.Controls.Add(this.label1);
+            this.panelDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDashboard.Location = new System.Drawing.Point(200, 0);
+            this.panelDashboard.Name = "panelDashboard";
+            this.panelDashboard.Size = new System.Drawing.Size(673, 69);
+            this.panelDashboard.TabIndex = 1;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Lucida Fax", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(319, 9);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(342, 20);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.Text = "Search for some thing...";
+            this.txtSearch.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtSearch_MouseDoubleClick);
             // 
             // lblUserNameMain
             // 
@@ -221,19 +241,67 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.Moccasin;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(200, 69);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(673, 408);
-            this.panelDesktop.TabIndex = 2;
-            // 
             // notifyIcon1
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            // 
+            // panelBottom
+            // 
+            this.panelBottom.BackColor = System.Drawing.Color.SlateGray;
+            this.panelBottom.Controls.Add(this.ıconButton3);
+            this.panelBottom.Controls.Add(this.ıconButton2);
+            this.panelBottom.Controls.Add(this.ıconButton1);
+            this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelBottom.Location = new System.Drawing.Point(200, 449);
+            this.panelBottom.Name = "panelBottom";
+            this.panelBottom.Size = new System.Drawing.Size(673, 28);
+            this.panelBottom.TabIndex = 4;
+            // 
+            // ıconButton3
+            // 
+            this.ıconButton3.IconChar = FontAwesome.Sharp.IconChar.Instagram;
+            this.ıconButton3.IconColor = System.Drawing.Color.Black;
+            this.ıconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton3.IconSize = 29;
+            this.ıconButton3.Location = new System.Drawing.Point(643, 0);
+            this.ıconButton3.Name = "ıconButton3";
+            this.ıconButton3.Size = new System.Drawing.Size(30, 28);
+            this.ıconButton3.TabIndex = 2;
+            this.ıconButton3.UseVisualStyleBackColor = true;
+            // 
+            // ıconButton2
+            // 
+            this.ıconButton2.IconChar = FontAwesome.Sharp.IconChar.Twitter;
+            this.ıconButton2.IconColor = System.Drawing.Color.Black;
+            this.ıconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton2.IconSize = 30;
+            this.ıconButton2.Location = new System.Drawing.Point(607, 0);
+            this.ıconButton2.Name = "ıconButton2";
+            this.ıconButton2.Size = new System.Drawing.Size(30, 28);
+            this.ıconButton2.TabIndex = 1;
+            this.ıconButton2.UseVisualStyleBackColor = true;
+            // 
+            // ıconButton1
+            // 
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.Github;
+            this.ıconButton1.IconColor = System.Drawing.Color.Black;
+            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton1.IconSize = 30;
+            this.ıconButton1.Location = new System.Drawing.Point(571, 0);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Size = new System.Drawing.Size(30, 28);
+            this.ıconButton1.TabIndex = 0;
+            this.ıconButton1.UseVisualStyleBackColor = true;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.Sienna;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(200, 69);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(673, 380);
+            this.panelDesktop.TabIndex = 5;
             // 
             // Form1
             // 
@@ -241,16 +309,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 477);
             this.Controls.Add(this.panelDesktop);
-            this.Controls.Add(this.panelTitleBar);
+            this.Controls.Add(this.panelBottom);
+            this.Controls.Add(this.panelDashboard);
             this.Controls.Add(this.panelMenu);
             this.IsMdiContainer = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Record Shop";
             this.panelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
+            this.panelDashboard.ResumeLayout(false);
+            this.panelDashboard.PerformLayout();
+            this.panelBottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -260,16 +330,21 @@
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panelTitleBar;
-        private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.Panel panelDashboard;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private FontAwesome.Sharp.IconButton btnAdd;
+        private FontAwesome.Sharp.IconButton btnPast;
         private FontAwesome.Sharp.IconButton btnUpdate;
         private FontAwesome.Sharp.IconButton btnSignIn;
         private FontAwesome.Sharp.IconButton btnHome;
         private FontAwesome.Sharp.IconButton btnSignOut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblUserNameMain;
+        private System.Windows.Forms.Panel panelBottom;
+        private FontAwesome.Sharp.IconButton ıconButton3;
+        private FontAwesome.Sharp.IconButton ıconButton2;
+        private FontAwesome.Sharp.IconButton ıconButton1;
+        private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
 

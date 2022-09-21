@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlakDukkaniYoneticiModulu
 {
-    public partial class frmAdd : Form
+    public partial class frmFinished : Form
     {
-        public frmAdd()
+        public frmFinished()
         {
             InitializeComponent();
         }
