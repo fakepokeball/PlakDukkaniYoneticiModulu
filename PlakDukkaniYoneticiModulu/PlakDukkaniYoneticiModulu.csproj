@@ -65,6 +65,24 @@
     <Compile Include="frmAdd.Designer.cs">
       <DependentUpon>frmAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDiscounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiscounts.Designer.cs">
+      <DependentUpon>frmDiscounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewAlbums.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewAlbums.Designer.cs">
+      <DependentUpon>frmNewAlbums.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOnSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOnSales.Designer.cs">
+      <DependentUpon>frmOnSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +102,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdd.resx">
       <DependentUpon>frmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiscounts.resx">
+      <DependentUpon>frmDiscounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewAlbums.resx">
+      <DependentUpon>frmNewAlbums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOnSales.resx">
+      <DependentUpon>frmOnSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdate.resx">
       <DependentUpon>frmUpdate.cs</DependentUpon>

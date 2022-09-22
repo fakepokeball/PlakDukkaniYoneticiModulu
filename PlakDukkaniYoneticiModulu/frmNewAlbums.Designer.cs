@@ -1,6 +1,6 @@
 ﻿namespace PlakDukkaniYoneticiModulu
 {
-    partial class frmFinished
+    partial class frmNewAlbums
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvFinishedWork = new System.Windows.Forms.DataGridView();
+            this.dgvOnSales = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinishedWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOnSales)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Sienna;
-            this.panel1.Controls.Add(this.dgvFinishedWork);
+            this.panel1.Controls.Add(this.dgvOnSales);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
             // 
-            // dgvFinishedWork
+            // dgvOnSales
             // 
-            this.dgvFinishedWork.BackgroundColor = System.Drawing.Color.Silver;
-            this.dgvFinishedWork.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFinishedWork.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvFinishedWork.Location = new System.Drawing.Point(0, 106);
-            this.dgvFinishedWork.Name = "dgvFinishedWork";
-            this.dgvFinishedWork.Size = new System.Drawing.Size(800, 344);
-            this.dgvFinishedWork.TabIndex = 0;
+            this.dgvOnSales.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvOnSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvOnSales.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvOnSales.Location = new System.Drawing.Point(0, 106);
+            this.dgvOnSales.Name = "dgvOnSales";
+            this.dgvOnSales.Size = new System.Drawing.Size(800, 344);
+            this.dgvOnSales.TabIndex = 0;
             // 
-            // frmFinished
+            // frmNewAlbums
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "frmFinished";
-            this.Text = "frmAdd";
+            this.Name = "frmNewAlbums";
+            this.Text = "frmNewAlbums";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinishedWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvOnSales)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,6 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvFinishedWork;
+        private System.Windows.Forms.DataGridView dgvOnSales;
     }
 }

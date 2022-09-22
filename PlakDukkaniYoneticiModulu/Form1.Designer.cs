@@ -48,16 +48,25 @@
             this.ıconButton2 = new FontAwesome.Sharp.IconButton();
             this.ıconButton1 = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btnOnSales = new FontAwesome.Sharp.IconButton();
+            this.btnNewAlbums = new FontAwesome.Sharp.IconButton();
+            this.btnDiscounts = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDashboard.SuspendLayout();
             this.panelBottom.SuspendLayout();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelMenu.Controls.Add(this.btnDiscounts);
+            this.panelMenu.Controls.Add(this.btnNewAlbums);
+            this.panelMenu.Controls.Add(this.btnOnSales);
             this.panelMenu.Controls.Add(this.btnPast);
             this.panelMenu.Controls.Add(this.btnUpdate);
             this.panelMenu.Controls.Add(this.btnSignIn);
@@ -67,7 +76,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 477);
+            this.panelMenu.Size = new System.Drawing.Size(200, 629);
             this.panelMenu.TabIndex = 0;
             // 
             // btnPast
@@ -126,7 +135,7 @@
             this.btnSignIn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignIn.IconSize = 30;
             this.btnSignIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignIn.Location = new System.Drawing.Point(0, 357);
+            this.btnSignIn.Location = new System.Drawing.Point(0, 509);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSignIn.Size = new System.Drawing.Size(200, 60);
@@ -170,7 +179,7 @@
             this.btnSignOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSignOut.IconSize = 30;
             this.btnSignOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignOut.Location = new System.Drawing.Point(0, 417);
+            this.btnSignOut.Location = new System.Drawing.Point(0, 569);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSignOut.Size = new System.Drawing.Size(200, 60);
@@ -253,7 +262,7 @@
             this.panelBottom.Controls.Add(this.ıconButton2);
             this.panelBottom.Controls.Add(this.ıconButton1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(200, 449);
+            this.panelBottom.Location = new System.Drawing.Point(200, 601);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(673, 28);
             this.panelBottom.TabIndex = 4;
@@ -297,17 +306,95 @@
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.Sienna;
+            this.panelDesktop.Controls.Add(this.pictureBox2);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(200, 69);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(673, 380);
+            this.panelDesktop.Size = new System.Drawing.Size(673, 532);
             this.panelDesktop.TabIndex = 5;
+            // 
+            // btnOnSales
+            // 
+            this.btnOnSales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnOnSales.FlatAppearance.BorderSize = 0;
+            this.btnOnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOnSales.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOnSales.ForeColor = System.Drawing.Color.White;
+            this.btnOnSales.IconChar = FontAwesome.Sharp.IconChar.Play;
+            this.btnOnSales.IconColor = System.Drawing.Color.White;
+            this.btnOnSales.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOnSales.IconSize = 30;
+            this.btnOnSales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOnSales.Location = new System.Drawing.Point(0, 320);
+            this.btnOnSales.Name = "btnOnSales";
+            this.btnOnSales.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnOnSales.Size = new System.Drawing.Size(200, 60);
+            this.btnOnSales.TabIndex = 8;
+            this.btnOnSales.Text = " ON SALES";
+            this.btnOnSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnOnSales.UseVisualStyleBackColor = true;
+            this.btnOnSales.Click += new System.EventHandler(this.ıconButton4_Click);
+            // 
+            // btnNewAlbums
+            // 
+            this.btnNewAlbums.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNewAlbums.FlatAppearance.BorderSize = 0;
+            this.btnNewAlbums.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewAlbums.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnNewAlbums.ForeColor = System.Drawing.Color.White;
+            this.btnNewAlbums.IconChar = FontAwesome.Sharp.IconChar.SortAmountDesc;
+            this.btnNewAlbums.IconColor = System.Drawing.Color.White;
+            this.btnNewAlbums.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNewAlbums.IconSize = 30;
+            this.btnNewAlbums.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNewAlbums.Location = new System.Drawing.Point(0, 380);
+            this.btnNewAlbums.Name = "btnNewAlbums";
+            this.btnNewAlbums.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnNewAlbums.Size = new System.Drawing.Size(200, 60);
+            this.btnNewAlbums.TabIndex = 9;
+            this.btnNewAlbums.Text = " NEW ALBUMS";
+            this.btnNewAlbums.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNewAlbums.UseVisualStyleBackColor = true;
+            this.btnNewAlbums.Click += new System.EventHandler(this.btnNewAlbums_Click);
+            // 
+            // btnDiscounts
+            // 
+            this.btnDiscounts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDiscounts.FlatAppearance.BorderSize = 0;
+            this.btnDiscounts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscounts.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDiscounts.ForeColor = System.Drawing.Color.White;
+            this.btnDiscounts.IconChar = FontAwesome.Sharp.IconChar.MoneyBillAlt;
+            this.btnDiscounts.IconColor = System.Drawing.Color.White;
+            this.btnDiscounts.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDiscounts.IconSize = 30;
+            this.btnDiscounts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscounts.Location = new System.Drawing.Point(0, 440);
+            this.btnDiscounts.Name = "btnDiscounts";
+            this.btnDiscounts.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnDiscounts.Size = new System.Drawing.Size(200, 60);
+            this.btnDiscounts.TabIndex = 10;
+            this.btnDiscounts.Text = " DISCOUNTS";
+            this.btnDiscounts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDiscounts.UseVisualStyleBackColor = true;
+            this.btnDiscounts.Click += new System.EventHandler(this.btnDiscounts_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(673, 532);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 477);
+            this.ClientSize = new System.Drawing.Size(873, 629);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelBottom);
             this.Controls.Add(this.panelDashboard);
@@ -321,6 +408,8 @@
             this.panelDashboard.ResumeLayout(false);
             this.panelDashboard.PerformLayout();
             this.panelBottom.ResumeLayout(false);
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,6 +434,10 @@
         private FontAwesome.Sharp.IconButton ıconButton1;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.TextBox txtSearch;
+        private FontAwesome.Sharp.IconButton btnDiscounts;
+        private FontAwesome.Sharp.IconButton btnNewAlbums;
+        private FontAwesome.Sharp.IconButton btnOnSales;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

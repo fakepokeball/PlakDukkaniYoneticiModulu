@@ -1,6 +1,6 @@
 ﻿namespace PlakDukkaniYoneticiModulu
 {
-    partial class frmFinished
+    partial class frmDiscounts
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvFinishedWork = new System.Windows.Forms.DataGridView();
+            this.dgvDiscounts = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinishedWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscounts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Sienna;
-            this.panel1.Controls.Add(this.dgvFinishedWork);
+            this.panel1.Controls.Add(this.dgvDiscounts);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 450);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
-            // dgvFinishedWork
+            // dgvDiscounts
             // 
-            this.dgvFinishedWork.BackgroundColor = System.Drawing.Color.Silver;
-            this.dgvFinishedWork.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFinishedWork.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvFinishedWork.Location = new System.Drawing.Point(0, 106);
-            this.dgvFinishedWork.Name = "dgvFinishedWork";
-            this.dgvFinishedWork.Size = new System.Drawing.Size(800, 344);
-            this.dgvFinishedWork.TabIndex = 0;
+            this.dgvDiscounts.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvDiscounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDiscounts.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDiscounts.Location = new System.Drawing.Point(0, 106);
+            this.dgvDiscounts.Name = "dgvDiscounts";
+            this.dgvDiscounts.Size = new System.Drawing.Size(800, 344);
+            this.dgvDiscounts.TabIndex = 0;
             // 
-            // frmFinished
+            // frmDiscounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "frmFinished";
-            this.Text = "frmAdd";
+            this.Name = "frmDiscounts";
+            this.Text = "frmDiscounts";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFinishedWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscounts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,6 +71,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvFinishedWork;
+        private System.Windows.Forms.DataGridView dgvDiscounts;
     }
 }

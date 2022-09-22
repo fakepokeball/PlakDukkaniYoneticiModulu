@@ -41,7 +41,9 @@ namespace PlakDukkaniYoneticiModulu
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            panelDesktop.Controls.Clear();           
+            panelDesktop.Controls.Clear();
+            panelDesktop.Controls.Add(pictureBox2);
+            pictureBox2.Parent=panelDesktop;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -52,6 +54,21 @@ namespace PlakDukkaniYoneticiModulu
         private void txtSearch_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             txtSearch.Clear();
+        }
+
+        private void btnOnSales_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmOnSales());
+        }
+
+        private void btnNewAlbums_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmNewAlbums());
+        }
+
+        private void btnDiscounts_Click(object sender, EventArgs e)
+        {
+            this.FormAc(new frmDiscounts());
         }
     }
 }
