@@ -333,7 +333,6 @@
             this.btnOnSales.Text = " ON SALES";
             this.btnOnSales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOnSales.UseVisualStyleBackColor = true;
-            this.btnOnSales.Click += new System.EventHandler(this.ıconButton4_Click);
             // 
             // btnNewAlbums
             // 
